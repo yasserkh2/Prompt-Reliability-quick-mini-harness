@@ -611,7 +611,3 @@ For questions:
 4. Check test results in `results/` directory
 
 ---
-
-**Built for reliable LLM evaluation in production environments.**
-
-**Ready for job interviews and production deployment.**
