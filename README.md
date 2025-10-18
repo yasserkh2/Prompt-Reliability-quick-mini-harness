@@ -305,16 +305,18 @@ The harness tests 10 types of label-preserving transformations:
 
 Tests robustness to challenging scenarios:
 
-1. **Order Shuffle**: Shuffle answer options
-2. **Distractor Facts**: Add irrelevant true facts
-3. **Misleading Prefix**: Add misleading context
-4. **Position Bias**: Test answer position effects
-5. **Verbose Wrapper**: Wrap in verbose text
-6. **Format Interference**: Add unusual formatting
-7. **Semantic Distractors**: Add related but irrelevant info
-8. **Negation Flip**: Add double negatives
-9. **Multi-Part**: Add multiple sub-questions
-10. **Length Extreme**: Test extreme length variations
+| Perturbation | Example | Purpose |
+|--------------|---------|---------|
+| **Order Shuffle** | Answer options A,B,C,D → D,B,A,C | Test position independence |
+| **Distractor Facts** | Add true but irrelevant information | Test information filtering |
+| **Misleading Prefix** | Add context suggesting wrong answer | Test resistance to misdirection |
+| **Position Bias** | Move correct answer to different positions | Test for answer position effects |
+| **Verbose Wrapper** | Wrap question in unnecessary text | Test signal extraction |
+| **Format Interference** | Add unusual formatting (### QUESTION ###) | Test format robustness |
+| **Semantic Distractors** | Add topically related but irrelevant info | Test semantic filtering |
+| **Negation Flip** | Add double negatives or confusing logic | Test logical reasoning |
+| **Multi-Part** | Add additional sub-questions | Test focus on main question |
+| **Length Extreme** | Test very short or very long inputs | Test length invariance |
 
 ```bash
 python -m evalharness.cli --config configs/perturbation.yaml --evaluator perturbation
