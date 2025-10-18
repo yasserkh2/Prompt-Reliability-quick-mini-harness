@@ -1,0 +1,10 @@
+[
+  {
+    "input": "What is the HTTP acronym meaning?",
+    "output": "Hypertext Transfer Protocol"
+  },
+  {
+    "input": "JSON acronym meaning",
+    "output": "JavaScript Object Notation"
+  }
+]

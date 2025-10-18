@@ -1,0 +1,70 @@
+[
+  {
+    "input": "What is the HTTP acronym meaning?",
+    "output": "Hypertext Transfer Protocol"
+  },
+  {
+    "input": "JSON acronym meaning",
+    "output": "JavaScript Object Notation"
+  },
+  {
+    "input": "What is 2 + 2?",
+    "output": "4"
+  },
+  {
+    "input": "What is the capital of Japan?",
+    "output": "Tokyo"
+  },
+  {
+    "input": "Which planet is larger: Earth or Mars?",
+    "output": "Earth"
+  },
+  {
+    "input": "What is the SDK acronym?",
+    "output": "Software Development Kit"
+  },
+  {
+    "input": "Define Terraform",
+    "output": "Infrastructure as Code"
+  },
+  {
+    "input": "What is the capital of Italy?",
+    "output": "Rome"
+  },
+  {
+    "input": "Which planet is known as the Red Planet?",
+    "output": "Mars"
+  },
+  {
+    "input": "How many continents are there on Earth?",
+    "output": "Seven"
+  },
+  {
+    "input": "What is the largest ocean on Earth?",
+    "output": "Pacific Ocean"
+  },
+  {
+    "input": "Who painted the Mona Lisa?",
+    "output": "Leonardo da Vinci"
+  },
+  {
+    "input": "What is the boiling point of water at sea level in Celsius?",
+    "output": "100 °C"
+  },
+  {
+    "input": "What is the world’s longest river?",
+    "output": "Nile"
+  },
+  {
+    "input": "Which country has the largest land area in the world?",
+    "output": "Russia"
+  },
+  {
+    "input": "What gas do plants absorb from the atmosphere for photosynthesis?",
+    "output": "Carbon dioxide"
+  },
+  {
+    "input": "What is the largest desert (non-polar) in the world?",
+    "output": "Sahara Desert"
+  }
+]

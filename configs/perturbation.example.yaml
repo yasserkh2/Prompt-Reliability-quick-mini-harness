@@ -1,0 +1,52 @@
+# Perturbation Testing Configuration Example
+# Copy this file to perturbation.yaml and fill in your details
+
+# Model configuration
+model:
+  type: openai  # "openai" or custom
+  name: gpt-4o-mini  # Model name: gpt-4o-mini, gpt-4o, gpt-4-turbo, gpt-3.5-turbo, etc.
+  
+  # API credentials (alternatively set OPENAI_API_KEY environment variable)
+  api_key: your-api-key-here
+  
+  # Generation parameters
+  temperature: 0.0  # 0.0 = deterministic
+  max_tokens: 100
+  timeout: 30
+
+# Evaluator configuration for PERTURBATION testing
+evaluator:
+  # Which perturbations to test (omit to test all 10)
+  # Available perturbations:
+  #   - order_shuffle: Shuffle order of elements
+  #   - distractor_facts: Add irrelevant true facts
+  #   - misleading_prefix: Add misleading context
+  #   - position_bias: Test answer position bias
+  #   - verbose_wrapper: Wrap in verbose text
+  #   - format_interference: Add unusual formatting
+  #   - semantic_distractors: Add related but irrelevant info
+  #   - negation_flip: Add double negatives
+  #   - multi_part: Add multiple sub-questions
+  #   - length_extreme: Test extreme length variations
+  
+  perturbation_types:
+    - order_shuffle
+    - distractor_facts
+    - misleading_prefix
+    - position_bias
+    - verbose_wrapper
+    - format_interference
+    - semantic_distractors
+    - negation_flip
+    - multi_part
+    - length_extreme
+  
+  # Scoring method for comparing outputs
+  # Options: normalized_equal, regex, similarity, contains
+  scoring_method: normalized_equal
+  
+  # Threshold for similarity-based scoring (0.0 to 1.0)
+  scoring_threshold: 0.8
+
+# Usage:
+# python -m evalharness.cli --config configs/perturbation.yaml --evaluator perturbation
